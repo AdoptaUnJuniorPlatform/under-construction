@@ -103,10 +103,8 @@ p{
   color: #ffe81f;
   top: 100%;
   animation: scroller 100s linear 16s;
-  animation-iteration-count: infinite;
 }
 #title, #subtitle{
- 
   line-height: 1.5rem;
 }
 
@@ -115,6 +113,21 @@ p{
   font-size: 3.5rem;
 }
 
+.links{
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  right: 40%;
+  opacity: 0;
+  z-index: 2;
+  animation: slide-in 150s ease-in-out 16s both;
+}
+.links_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+  }
 
 @keyframes intro{
   0%{
@@ -154,3 +167,13 @@ p{
     top: -200%;
   }
 }
+  @keyframes slide-in{
+    0%{
+      opacity:0;
+      transform: translateY(100%);
+    }
+    100%{
+      opacity:1;
+      transform: translateY(0%);
+    }
+  }
