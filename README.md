@@ -1,4 +1,4 @@
-# Adopta Un JuniorÑ página en costrucción :construction:
+# Adopta Un Junior página en costrucción :construction:
 
 Desde #Adopta Un Junior estamos trabajando para crear una plataforma que proporcione a los y las juniors del sector IT un espacio propio, donde mostrar sus capacidades y crecer juntos.
 
