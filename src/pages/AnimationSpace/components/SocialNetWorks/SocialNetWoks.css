@@ -1,0 +1,31 @@
+.socialNetWorks {
+    @apply absolute w-[800px] flex flex-row flex-wrap justify-between text-center z-[2] text-white font-medium text-[3.25rem] left-[28%] top-[45%] animate-[social_6s_ease-in] ;
+}
+
+.githubNetWork{
+    @apply w-[6rem] h-[6rem] bg-black ;
+}
+.twitterNetWork{
+    @apply w-[6rem] h-[6rem] bg-black ;
+}
+.instagramNetWork{
+    @apply w-[7rem] h-[7rem] ;
+
+}
+.linkedinNetWork{
+    @apply w-[6rem] h-[6rem] bg-white rounded-xl;
+
+}
+@keyframes social {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
