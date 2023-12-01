@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-//@ts-expect-eror
 import * as THREE from "three";
 
 interface AnimationSpaceProps {
@@ -7,7 +6,7 @@ interface AnimationSpaceProps {
   theme: string;
 }
 
-function AnimationSpace({ children, theme }: AnimationSpaceProps) {
+export const AnimationSpace = ({ children, theme }: AnimationSpaceProps) => {
   const canvasRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -89,10 +88,9 @@ function AnimationSpace({ children, theme }: AnimationSpaceProps) {
   }, [theme]);
 
   return (
-    <div ref={canvasRef} className="w-full h-full">
+    <div ref={canvasRef} className="w-full h-full z-[1]">
       {children}
     </div>
   );
-}
+};
 
-export default AnimationSpace;

@@ -1,13 +1,12 @@
-import AnimationSpace from './pages/underConstruction/AnimationSpace';
+import {AnimationSpace} from "./pages/AnimationSpace/AnimationSpace.tsx";
+import {TextCrawl} from "./pages/AnimationSpace/components/TextCrawl/TextCrawl.tsx";
 
-import TextCrawl from './pages/underConstruction/TextCrawl';
+export const App = () => {
 
-export default function App() {
-
-  return (
-    <>
-      <AnimationSpace children={<div className="stars"></div>} theme='dark' />
-      <TextCrawl/>
-    </>
-  );
-}
+    return (
+        <div className="App">
+            <AnimationSpace children={<TextCrawl/>
+            } theme='dark'/>
+        </div>
+    );
+};
