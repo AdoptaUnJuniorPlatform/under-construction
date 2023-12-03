@@ -1,5 +1,5 @@
 .socialNetWorks {
-    @apply absolute w-[55%] flex flex-col flex-wrap left-[25%] top-[40%] animate-[social_6s_ease-in] sm:w-[50%] sm:left-[25%] ;
+    @apply absolute w-[70%] flex flex-col flex-wrap left-[15%] top-[40%] animate-[social_6s_ease-in] sm:w-[50%] sm:left-[25%] ;
 }
 .socialLinks{
     @apply flex flex-row flex-wrap items-center justify-between mb-16 w-full;

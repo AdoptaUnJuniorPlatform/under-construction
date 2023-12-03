@@ -10,7 +10,10 @@ interface AnimationSpaceProps {
 
 export const AnimationSpace = ({children, socialNetwork, theme}: AnimationSpaceProps) => {
     const [isAnimationFinished, setIsAnimationFinished] = React.useState(false);
+    const windowWidth = useRef(window.innerWidth);
+
     const canvasRef = useRef<HTMLDivElement>(null);
+
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -91,7 +94,13 @@ export const AnimationSpace = ({children, socialNetwork, theme}: AnimationSpaceP
     }, [theme]);
 
     onanimationstart = (event => {
-        event.animationName === "scroller" && setTimeout(() => setIsAnimationFinished(true), 54000);
+        if (windowWidth.current <= 1024) {
+            event.animationName === "textTransition" && setTimeout(() => setIsAnimationFinished(true), 50000);
+
+        } else {
+            event.animationName === "scroller" && setTimeout(() => setIsAnimationFinished(true), 54000);
+
+        }
     });
 
 
