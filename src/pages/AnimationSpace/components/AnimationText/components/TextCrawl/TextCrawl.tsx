@@ -9,9 +9,8 @@ export const TextCrawl = () => {
                 <div id="content">
                     <p id='title'>Episodio I</p>
                     <p id="subtitle">Una nueva esperanza</p>
-                    <p className={'textScroller'}>Es un período complicado para los juniors. Las oportunidades laborales para la gente que acaba de
-                        incorporarse al sector son unicornios y cada vez se hace más difícil encontrar una empresa en la
-                        que establecer base.</p>
+                    <p className={'textScroller'}>Es un período complicado para los juniors. Donde cada vez se hace más difícil encontrar una empresa que les de
+                        una oportunnidad.</p>
                     <p className={'textScroller'}>En estos tiempos, Maite y Laura tienen una idea que puede cambiar el rumbo de las cosas: Adopta
                         un Junior. Deciden montar una plataforma con la ayuda de otros juniors como ellas y demostrar de
                         lo que somos capaces.</p>
