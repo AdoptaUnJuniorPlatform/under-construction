@@ -24,13 +24,13 @@ p {
 
 #scroller {
     @apply absolute text-[#ffe81f] font-bold font-serif	text-[350%] h-[50em] w-[20em] ml-[-10em] z-0 text-justify overflow-hidden origin-[50%_100%] left-2/4 bottom-0 after:absolute after:content-[''] after:top-0 after:bottom-[60%] after:inset-x-0;
-    transform: perspective(350px) rotateX(15deg); /*En Tailwind no existe perspective y en rotate no no veo opción para ponerlo en el eje X*/
+    transform: perspective(350px) rotateX(13deg); /*En Tailwind no existe perspective y en rotate no no veo opción para ponerlo en el eje X*/
 }
 
 
 
 #content {
-    @apply absolute text-[#ffe81f] animate-[scroller_100s_linear_16s] top-[105%];
+    @apply absolute text-[#ffe81f] animate-[scroller_105s_linear_16s] top-[105%];
 }
 
 

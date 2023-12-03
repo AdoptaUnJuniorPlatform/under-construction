@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import * as THREE from "three";
+import './AnimationSpace.css';
 
 interface AnimationSpaceProps {
     children: React.ReactNode;
@@ -90,13 +91,12 @@ export const AnimationSpace = ({children, socialNetwork, theme}: AnimationSpaceP
     }, [theme]);
 
     onanimationstart = (event => {
-        event.animationName === "scroller" && setTimeout(() => setIsAnimationFinished(true), 55000);
+        event.animationName === "scroller" && setTimeout(() => setIsAnimationFinished(true), 54000);
     });
 
 
-
     return (
-        <div ref={canvasRef} className="w-full h-full z-[1]">
+        <div ref={canvasRef} className="animation">
             {isAnimationFinished ? socialNetwork : children}
         </div>
     );

@@ -1,27 +1,40 @@
 .socialNetWorks {
-    @apply absolute w-[800px] flex flex-row flex-wrap justify-between text-center z-[2] text-white font-medium text-[3.25rem] left-[28%] top-[45%] animate-[social_6s_ease-in] ;
+    @apply absolute w-[40%] flex flex-col flex-wrap left-[30%] top-[40%] animate-[social_6s_ease-in] ;
+}
+.socialLinks{
+    @apply flex flex-row justify-between mb-16 w-full;
+}
+.githubNetWork {
+    @apply w-[6rem] h-[6rem] bg-black  ;
 }
 
-.githubNetWork{
-    @apply w-[6rem] h-[6rem] bg-black ;
+.linkedinNetWork {
+    @apply w-[6rem] h-[6rem] bg-white rounded-xl;
+
 }
-.twitterNetWork{
-    @apply w-[6rem] h-[6rem] bg-black ;
-}
-.instagramNetWork{
+
+.instagramNetWork {
     @apply w-[7rem] h-[7rem] ;
 
 }
-.linkedinNetWork{
-    @apply w-[6rem] h-[6rem] bg-white rounded-xl;
 
+.twitterNetWork {
+    @apply w-[5.5rem] h-[5.5rem] bg-black ;
+}
+.titleEnd{
+    @apply text-[#ffe81f] text-[4rem] font-medium;
 }
 @keyframes social {
     0% {
         opacity: 0;
     }
-
-    90% {
+    20% {
+        opacity: 0.25;
+    }
+    40% {
+        opacity: 0.50;
+    }
+    60% {
         opacity: 0.75;
     }
     100% {
