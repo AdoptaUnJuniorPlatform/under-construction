@@ -1,13 +1,13 @@
-import AnimationSpace from './pages/underConstruction/AnimationSpace';
+import {AnimationSpace} from "./pages/AnimationSpace/AnimationSpace.tsx";
+import {SocialNetWorks} from "./pages/AnimationSpace/components/SocialNetWorks/SocialNetWorks.tsx";
+import {AnimationText} from "./pages/AnimationSpace/components/AnimationText/AnimationText.tsx";
 
-import TextCrawl from './pages/underConstruction/TextCrawl';
+export const App = () => {
 
-export default function App() {
-
-  return (
-    <>
-      <AnimationSpace children={<div className="stars"></div>} theme='dark' />
-      <TextCrawl/>
-    </>
-  );
-}
+    return (
+        <div className="App">
+            <AnimationSpace children={<AnimationText/>} socialNetwork={<SocialNetWorks/>
+            } theme='dark'/>
+        </div>
+    );
+};

@@ -1,0 +1,58 @@
+.textCrawlMobile {
+    @apply absolute w-[55%] flex flex-col flex-wrap left-[25%] top-[40%] text-[#ffe81f] font-bold font-serif ;
+}
+
+.headerText {
+    @apply absolute w-full opacity-0 animate-[textTransition_6s_ease-out_18s] translate-y-[-40%] text-center;
+}
+
+.headerText > h1 {
+    @apply sm:text-[3rem]  md:text-[3.5rem]  xl:text-[4rem]  text-[2.5rem] mb-2 ;
+}
+
+.headerText > h2 {
+    @apply sm:text-[1.75rem]  md:text-[2.25rem]  xl:text-[2.75rem] text-[1.25rem] ;
+}
+
+#introduction, #description, #knot, #presentation, #collaborations, #footer {
+    @apply opacity-0 absolute w-full text-[1.25rem] translate-y-[-40%] text-center sm:text-[1.75rem]  md:text-[2.25rem]  xl:text-[2.75rem] md:translate-y-[-10%];
+}
+
+#introduction {
+    @apply animate-[textTransition_6s_ease-out_25s]  ;
+}
+
+#description {
+    @apply animate-[textTransition_6s_ease-out_33s] ;
+}
+
+#knot {
+    @apply animate-[textTransition_6s_ease-out_41s] ;
+}
+
+#presentation {
+    @apply animate-[textTransition_6s_ease-out_49s]
+}
+
+#collaborations {
+    @apply animate-[textTransition_6s_ease-out_57s]
+}
+
+#footer {
+    @apply animate-[textTransition_6s_ease-out_65s]
+}
+
+@keyframes textTransition {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
