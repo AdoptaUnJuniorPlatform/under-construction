@@ -8,9 +8,7 @@ export const SocialNetWorks = () => {
     return (
         <article className={'socialNetWorks'}>
             <section className={'socialLinks'}>
-                    <a href={'https://github.com/AdoptaUnJuniorPlatform'} target={'_blank'} referrerPolicy={'no-referrer'}>
-                        <img className={'githubNetWork'} src={githubIcon} alt={'Icono GitHub'}/>
-                    </a>
+                    
                     <a href={'https://www.linkedin.com/company/adoptaunjunior/'} target={'_blank'} referrerPolicy={'no-referrer'}>
                         <img className={'linkedinNetWork'} src={linkedinIcon} alt={'Icono Linkedin'}/>
                     </a>
@@ -24,7 +22,7 @@ export const SocialNetWorks = () => {
             </section>
             <section>
                 <section className="titleEnd">
-                    <p>#Adopta un junior</p>
+                    <p>#AdoptaUnJunior</p>
                 </section>
             </section>
         </article>

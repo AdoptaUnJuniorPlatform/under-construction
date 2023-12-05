@@ -8,7 +8,7 @@ export const Introduction = () => {
         </section>
         <section className="logo">
             <img className='image' src={Logo} alt="Logotipo de Adopta un Junior"/>
-            <p>#Adopta un junior</p>
+            <p>#AdoptaUnJunior</p>
         </section>
     </article>)
 }

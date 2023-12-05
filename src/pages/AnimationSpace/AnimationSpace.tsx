@@ -95,10 +95,10 @@ export const AnimationSpace = ({children, socialNetwork, theme}: AnimationSpaceP
 
     onanimationstart = (event => {
         if (windowWidth.current <= 1024) {
-            event.animationName === "textTransition" && setTimeout(() => setIsAnimationFinished(true), 50000);
+            event.animationName === "textTransition" && setTimeout(() => setIsAnimationFinished(true), 10000);//TEXTO AMARILLO
 
         } else {
-            event.animationName === "scroller" && setTimeout(() => setIsAnimationFinished(true), 54000);
+            event.animationName === "scroller" && setTimeout(() => setIsAnimationFinished(true), 34000);
 
         }
     });

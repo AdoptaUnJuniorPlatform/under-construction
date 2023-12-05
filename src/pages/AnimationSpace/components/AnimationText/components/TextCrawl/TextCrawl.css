@@ -12,8 +12,8 @@
 
 
 #content {
-    @apply absolute text-[#ffe81f] animate-[scroller_105s_linear_16s] top-[105%];
-}
+    @apply absolute text-[#ffe81f] animate-[scroller_105s_linear_6s] top-[105%]; 
+}/*cambiado el tiempo de animacion entre logo y el texto amarillo*/
 
 
 
