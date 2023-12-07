@@ -1,5 +1,5 @@
 .textCrawlMobile {
-    @apply absolute w-[55%] flex flex-col flex-wrap left-[25%] top-[40%] text-[#ffe81f] font-bold font-serif ;
+    @apply absolute w-[55%] flex flex-col flex-wrap left-[25%] top-[40%] text-[#9280c2] font-bold font-serif;
 }
 
 .headerText {

@@ -5,10 +5,14 @@
 
 
 .logo {
-    @apply absolute text-[#ffe81f] -translate-x-2/4 -translate-y-2/4 text-center font-medium sm:text-[1.75rem]  md:text-[3rem]  xl:text-[4rem] text-[2rem] opacity-0 z-[2] w-full animate-[logo_10s_ease-out_9s] left-2/4 top-2/4;
+    @apply absolute -translate-x-2/4 -translate-y-2/4 text-center font-medium sm:text-[1.75rem] md:text-[3rem] xl:text-[4rem] text-[2rem] opacity-0 z-[2] w-full animate-[logo_10s_ease-out_9s] left-2/4 top-2/4;
+    background: linear-gradient(to left, #2193b0, #8adffb, #8A2BE2, #6b8e23); 
+    -webkit-background-clip: text; 
+    color: transparent;
 }
 .image {
     @apply w-1/5 h-1/5 mx-auto my-0;
+    filter: invert(100%) brightness(200%) sepia(0%) saturate(0%) hue-rotate(0deg);
 }
 
 @keyframes intro {
